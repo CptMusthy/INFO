@@ -1,9 +1,9 @@
 {
   "title": "Kişisel Bilgiler",
-  "name": "Ad Soyad:",
-  "phone": "Telefon:",
-  "email": "E-posta:",
-  "address": "Adres:",
+  "name": "Ad Soyad",
+  "phone": "Telefon",
+  "email": "E-posta",
+  "address": "Adres",
   "page2": "2. Sayfaya Git",
   "page3": "3. Sayfaya Git",
   "viewMap": "Haritada Görüntüle",
