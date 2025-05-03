@@ -18,6 +18,6 @@ function loadLanguage(lang) {
 
 document.addEventListener("DOMContentLoaded", () => {
   const savedLang = localStorage.getItem('language');
-  const lang = savedLang || 'tr';  // Default to Turkish
+  const lang = savedLang || 'tr';
   loadLanguage(lang);
 });

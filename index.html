@@ -4,17 +4,21 @@
   <meta charset="UTF-8" />
   <title>Multi-language Page</title>
   <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <div class="language-selector">
     <button onclick="setLanguage('en')">English</button>
     <button onclick="setLanguage('tr')">Türkçe</button>
+    <button onclick="setLanguage('zh')">中文</button>
+    <button onclick="setLanguage('ru')">Русский</button>
   </div>
 
   <h1 data-key="title">Kişisel Bilgiler</h1>
   <img src="img/your-photo.jpg" alt="Profile Photo" width="200" />
   <p><strong data-key="name">Ad Soyad:</strong> <span id="name">John Doe</span></p>
   <p><strong data-key="phone">Telefon:</strong> <span id="phone">+90 555 555 55 55</span></p>
+  <p><a href="https://wa.me/905555555555" target="_blank" data-key="whatsapp">WhatsApp ile iletişime geç</a></p>
   <p><strong data-key="email">E-posta:</strong></p>
   <ul>
     <li>john@example.com</li>

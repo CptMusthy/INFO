@@ -1,8 +1,18 @@
 body {
   font-family: Arial, sans-serif;
+  font-size: 16px;
   margin: 20px;
 }
 .language-selector button {
   margin: 5px;
   padding: 5px 10px;
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+p, span, strong {
+  min-width: 100px;
+  display: inline-block;
 }
