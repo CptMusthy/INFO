@@ -14,7 +14,6 @@ function loadLanguage(lang) {
     });
 }
 
-// Sayfa yüklendiğinde varsayılan dili ayarla
 document.addEventListener("DOMContentLoaded", () => {
   const savedLang = localStorage.getItem('language');
   const browserLang = navigator.language.startsWith('tr') ? 'tr' : 'en';
