@@ -39,11 +39,6 @@ body {
   text-align: left;
 }
 
-ul li {
-  list-style: none;
-  padding-bottom: 10px;
-}
-
 .icon {
   width: 64px;
   height: 64px;
