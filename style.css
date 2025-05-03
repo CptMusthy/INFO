@@ -50,39 +50,4 @@ body {
   body {
     font-size: 14px;
   }
-
-
-  .address-row {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 10px;
-  flex-wrap: wrap;
-}
-
-.address-item {
-  text-align: center;
-}
-
-.flag-icon {
-  width: 30px;
-  height: 20px;
-  margin-top: 5px;
-}
-
-.nav-link {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: background-color 0.3s;
-}
-
-.nav-link:hover {
-  background-color: #0056b3;
-}
-
 }
