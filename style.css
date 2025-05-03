@@ -9,7 +9,7 @@ body {
 
 /* Arka plan resmi ve içerik ortalama */
 .overlay {
-  background: url('img/plane-bg.jpg') no-repeat center center fixed;
+  background: url('img/airplane.jpg') no-repeat center center fixed;
   background-size: cover;
   min-height: 100vh;
   display: flex;
