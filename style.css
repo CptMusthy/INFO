@@ -1,51 +1,65 @@
+/* Genel gövde ayarları */
 body {
-  margin: 0;
+  background-color: #f0f0f5;  /* Göz yormayan açık gri */
+  color: #333333;             /* Koyu yazı rengi */
   font-family: Arial, sans-serif;
-  font-size: 16px;
-  background: url('img/airplane.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: white;
+  margin: 0;
+  padding: 0;
 }
 
+/* Overlay arka plan resmi */
 .overlay {
-  background-color: rgba(0, 0, 0, 0.6);
+  background: url('img/plane-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
   min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* İçerik ortalama */
+.content {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(0,0,0,0.2);
+}
+
+/* Dil seçici */
+.language-selector {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.language-selector {
-  position: absolute;
-  top: 10px;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .language-selector button {
-  margin: 5px;
-  padding: 5px 10px;
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  position: relative;
 }
 
-.content {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  color: #fff;
-  max-width: 600px;
+.language-selector button:hover {
+  background-color: #0056b3;
 }
 
-.content p, .content ul {
-  text-align: left;
+.flag-icon {
+  width: 24px;
+  height: 16px;
+  margin-top: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.icon {
-  width: 60px;
-  height: 60px;
-  margin: 10px 5px;
-  vertical-align: middle;
-}
-
+/* Adres kutuları */
 .address-row {
   display: flex;
   justify-content: center;
@@ -58,11 +72,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 250px;
+  max-width: 280px;
   border: 1px solid #ccc;
-  padding: 10px;
+  padding: 10px 15px;
   border-radius: 8px;
-  background-color: #f8f8f8;
+  background-color: #ffffff;
+  color: #222222;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 15px;
 }
 
 .map-icon-right {
@@ -71,8 +88,57 @@ body {
   margin-left: 10px;
 }
 
+/* Bağlantılar */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Sayfa bağlantı düğmeleri */
+nav {
+  margin-top: 20px;
+}
+
+.nav-link {
+  background-color: #007bff;
+  color: #fff;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #0056b3;
+}
+
+/* WhatsApp simgesi */
+.icon {
+  width: 28px;
+  height: 28px;
+  margin-top: 5px;
+}
+
+/* Responsive (Mobil görünüm) */
 @media (max-width: 600px) {
-  body {
-    font-size: 14px;
+  .address-item p {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .language-selector {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-link {
+    width: 80%;
+    text-align: center;
   }
 }
