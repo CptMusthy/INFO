@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background: url('img/airplane.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.language-selector {
+  position: absolute;
+  top: 10px;
+}
+
+.language-selector button {
+  margin: 5px;
+  padding: 5px 10px;
+}
+
+.content {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  max-width: 600px;
+}
+
+.content p, .content ul {
+  text-align: left;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  margin: 10px 5px;
+  vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
