@@ -49,7 +49,6 @@ body {
 
 @media (max-width: 600px) {
   body {
-    text-align: center;
     font-size: 14px;
   }
 }
