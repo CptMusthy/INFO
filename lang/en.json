@@ -1,9 +1,9 @@
 {
   "title": "Personal Information",
-  "name": "Name:",
-  "phone": "Phone:",
-  "email": "Email:",
-  "address": "Address:",
+  "name": "Name",
+  "phone": "Phone",
+  "email": "Email",
+  "address": "Address",
   "page2": "Go to Page 2",
   "page3": "Go to Page 3",
   "viewMap": "View on Map",
