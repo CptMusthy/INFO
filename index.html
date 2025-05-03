@@ -1,53 +1,55 @@
-
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Multi-language Page</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <div class="container">
-    <div class="language-switcher">
-      <button onclick="setLanguage('tr')"><img src="img/tr.png" alt="TR" /> Türkçe</button>
-      <button onclick="setLanguage('en')"><img src="img/en.png" alt="EN" /> English</button>
-      <button onclick="setLanguage('zh')"><img src="img/zh.png" alt="ZH" /> 中文</button>
-      <button onclick="setLanguage('ru')"><img src="img/ru.png" alt="RU" /> Русский</button>
+  <div class="overlay">
+    <div class="language-selector">
+      <button onclick="setLanguage('en')">English</button>
+      <button onclick="setLanguage('tr')">Türkçe</button>
+      <button onclick="setLanguage('zh')">中文</button>
+      <button onclick="setLanguage('ru')">Русский</button>
     </div>
 
-    <h1 data-key="title">Kişisel Bilgiler</h1>
-
-    <div class="info">
-      <p><strong>Ad Soyad:</strong> Ali Veli</p>
-      <p><strong>Telefon:</strong> +90 555 123 4567</p>
-      <p><a href="https://wa.me/905551234567" target="_blank">
+    <div class="content">
+      <h1 data-key="title">Kişisel Bilgiler</h1>
+      <img src="img/your-photo.jpg" alt="Profile Photo" width="200" />
+      <p><strong data-key="name">Ad Soyad:</strong> John Doe</p>
+      <p><strong data-key="phone">Telefon:</strong> +90 555 555 55 55</p>
+      <a href="https://wa.me/905555555555" target="_blank">
         <img src="img/whatsapp.png" alt="WhatsApp" class="icon" />
-      </a></p>
-      <p><strong>E-posta 1:</strong> ali@example.com</p>
-      <p><strong>E-posta 2:</strong> veli@example.com</p>
-    </div>
-
-    <div class="address-section">
-      <div class="address-block">
-        <p><strong>İstanbul Adresi:</strong><br/>İstanbul, Türkiye</p>
-        <div class="map-icon-center">
+      </a>
+      <p><strong data-key="email">E-posta:</strong></p>
+      <ul>
+        <li>john@example.com</li>
+        <li>john.doe@company.com</li>
+      </ul>
+      <p><strong data-key="address">Adres:</strong></p>
+      <ul>
+        <li>
+          İstanbul, Türkiye<br />
           <a href="https://www.google.com/maps?q=İstanbul" target="_blank">
             <img src="img/maps.png" alt="Map İstanbul" class="icon" />
           </a>
-        </div>
-      </div>
-
-      <div class="address-block">
-        <p><strong>Ankara Adresi:</strong><br/>Ankara, Türkiye</p>
-        <div class="map-icon-center">
+        </li>
+        <li>
+          Ankara, Türkiye<br />
           <a href="https://www.google.com/maps?q=Ankara" target="_blank">
             <img src="img/maps.png" alt="Map Ankara" class="icon" />
           </a>
-        </div>
-      </div>
+        </li>
+      </ul>
+
+      <nav>
+        <a href="page2.html" data-key="page2">2. Sayfaya Git</a>
+        <a href="page3.html" data-key="page3">3. Sayfaya Git</a>
+      </nav>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,4 +1,3 @@
-
 function setLanguage(lang) {
   localStorage.setItem('language', lang);
   loadLanguage(lang);
@@ -14,11 +13,6 @@ function loadLanguage(lang) {
           el.textContent = data[key];
         }
       });
-
-      // Sayfa başlığını güncelle
-      if (data.pagetitle) {
-        document.title = data.pagetitle;
-      }
     });
 }
 
