@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,55 +9,76 @@
 </head>
 <body>
   <div class="overlay">
-    <div class="language-selector">
-      <button onclick="setLanguage('en')">English</button>
-      <button onclick="setLanguage('tr')">Türkçe</button>
-      <button onclick="setLanguage('zh')">中文</button>
-      <button onclick="setLanguage('ru')">Русский</button>
-    </div>
-
     <div class="content">
+
+      <!-- Dil Seçimi -->
+      <div class="language-selector">
+        <button onclick="setLanguage('tr')">
+          Türkçe
+          <img src="img/flag-tr.png" alt="Türkçe" class="flag-icon" />
+        </button>
+        <button onclick="setLanguage('en')">
+          English
+          <img src="img/flag-en.png" alt="English" class="flag-icon" />
+        </button>
+        <button onclick="setLanguage('zh')">
+          中文
+          <img src="img/flag-cn.png" alt="Chinese" class="flag-icon" />
+        </button>
+        <button onclick="setLanguage('ru')">
+          Русский
+          <img src="img/flag-ru.png" alt="Russian" class="flag-icon" />
+        </button>
+      </div>
+
+      <!-- Başlık -->
       <h1 data-key="title">Kişisel Bilgiler</h1>
-      <img src="img/your-photo.jpg" alt="Profile Photo" width="200" />
-      <p><strong data-key="name">Ad Soyad:</strong> John Doe</p>
-      <p><strong data-key="phone">Telefon:</strong> +90 555 555 55 55</p>
-      <a href="https://wa.me/905555555555" target="_blank">
-        <img src="img/whatsapp.png" alt="WhatsApp" class="icon" />
-      </a>
-      <p><strong data-key="email">E-posta:</strong></p>
-      <ul>
-        <li>john@example.com</li>
-        <li>john.doe@company.com</li>
-      </ul>
-      <p><strong data-key="address">Adres:</strong></p>
 
-      
-<div class="address-row">
-  <div class="address-item">
-    <p>
-      İstanbul, İstanbul, İstanbul, İstanbul, İstanbul, İstanbul, İstanbul, Türkiye
-      <a href="https://www.google.com/maps?q=İstanbul" target="_blank">
-        <img src="img/maps.png" alt="Map İstanbul" class="map-icon-right" />
-      </a>
-    </p>
-  </div>
-  <div class="address-item">
-    <p>
-      Ankara, Ankara, Ankara, Ankara, Ankara, Ankara, Ankara, Türkiye
-      <a href="https://www.google.com/maps?q=Ankara" target="_blank">
-        <img src="img/maps.png" alt="Map Ankara" class="map-icon-right" />
-      </a>
-    </p>
-  </div>
-</div>
+      <!-- Fotoğraf -->
+      <img src="img/your-photo.jpg" alt="Profil Fotoğrafı" width="200" />
 
+      <!-- İletişim Bilgileri -->
+      <div class="contact-info">
+        <p><strong data-key="name">Ad Soyad:</strong> John Doe</p>
+        <p><strong data-key="phone">Telefon:</strong> +90 555 555 55 55</p>
+        <a href="https://wa.me/905555555555" target="_blank">
+          <img src="img/whatsapp.png" alt="WhatsApp" class="icon" />
+        </a>
 
+        <p><strong data-key="email">E-posta:</strong></p>
+        <ul>
+          <li>john@example.com</li>
+          <li>john.doe@company.com</li>
+        </ul>
+      </div>
+
+      <!-- Adresler -->
+      <p><strong data-key="address">Adresler:</strong></p>
+      <div class="address-row">
+        <div class="address-item">
+          <p>
+            İstanbul, Türkiye
+            <a href="https://www.google.com/maps?q=İstanbul" target="_blank">
+              <img src="img/maps.png" alt="Harita İstanbul" class="map-icon-right" />
+            </a>
+          </p>
+        </div>
+        <div class="address-item">
+          <p>
+            Ankara, Türkiye
+            <a href="https://www.google.com/maps?q=Ankara" target="_blank">
+              <img src="img/maps.png" alt="Harita Ankara" class="map-icon-right" />
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Sayfa Geçişleri -->
       <nav>
-        <a href="page2.html" data-key="page2">2. Sayfaya Git</a>
-        <a href="page3.html" data-key="page3">3. Sayfaya Git</a>
+        <a class="nav-link" href="page2.html" data-key="page2">2. Sayfa</a>
+        <a class="nav-link" href="page3.html" data-key="page3">3. Sayfa</a>
       </nav>
     </div>
   </div>
-  <script src="script.js"></script>
 </body>
 </html>
