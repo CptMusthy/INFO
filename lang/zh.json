@@ -1,9 +1,9 @@
 {
   "title": "个人信息",
-  "name": "姓名：",
-  "phone": "电话：",
-  "email": "电子邮件：",
-  "address": "地址：",
+  "name": "姓名",
+  "phone": "电话",
+  "email": "电子邮件",
+  "address": "地址",
   "page2": "前往第2页",
   "page3": "前往第3页",
   "viewMap": "在地图上查看",
