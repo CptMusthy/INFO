@@ -39,6 +39,13 @@ body {
   text-align: left;
 }
 
+.icon {
+  width: 32px;
+  height: 32px;
+  margin: 10px 5px;
+  vertical-align: middle;
+}
+
 @media (max-width: 600px) {
   body {
     font-size: 14px;
