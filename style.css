@@ -32,25 +32,18 @@ body {
 /* Dil seçici */
 .language-selector {
   display: flex;
-  justify-content: center;
   gap: 10px;
-  flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap; /* Ekran daralınca alt satıra geçebilir */
   margin-bottom: 20px;
 }
 
 .language-selector button {
   padding: 8px 12px;
-  border: none;
-  background-color: #007bff;
-  color: white;
-  border-radius: 6px;
-  cursor: pointer;
   font-size: 14px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  cursor: pointer;
 }
+
 
 .language-selector button:hover {
   background-color: #0056b3;
