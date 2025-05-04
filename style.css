@@ -42,7 +42,7 @@ body {
   padding: 8px 16px;
   font-size: 14px;
   font-weight: bold;
-  white-space: wrap;
+  white-space: nowrap;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #eee;
