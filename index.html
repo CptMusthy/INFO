@@ -2,60 +2,75 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title data-key="title">Kişisel Bilgiler</title>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
 <body>
   <div class="overlay">
-    <div class="language-selector">
-      <button onclick="setLanguage('tr')"><img src="img/tr.png" alt="TR" /> Türkçe</button>
-      <button onclick="setLanguage('en')"><img src="img/en.png" alt="EN" /> English</button>
-      <button onclick="setLanguage('zh')"><img src="img/zh.png" alt="ZH" /> 中文</button>
-      <button onclick="setLanguage('ru')"><img src="img/ru.png" alt="RU" /> Русский</button>
-    </div>
-
     <div class="content">
-      <h1 data-key="title">Kişisel Bilgiler</h1>
-      <img src="img/your-photo.jpg" alt="Profil Fotoğrafı" width="200" />
+      
+      <!-- Dil Seçimi -->
+      <div class="language-selector">
+        <button onclick="setLanguage('tr')">
+          <img src="img/tr.png" alt="TR"/> Türkçe
+        </button>
+        <button onclick="setLanguage('en')">
+          <img src="img/en.png" alt="EN"/> English
+        </button>
+        <button onclick="setLanguage('zh')">
+          <img src="img/zh.png" alt="ZH"/> 中文
+        </button>
+        <button onclick="setLanguage('ru')">
+          <img src="img/ru.png" alt="RU"/> Русский
+        </button>
+      </div>
 
+      <!-- Fotoğraf -->
+      <img src="img/your-photo.jpg" alt="Profil Fotoğrafı" class="profile-photo" />
+
+      <h1 data-key="title">Kişisel Bilgiler</h1>
+      <p><strong data-key="name">Ad Soyad:</strong> John Doe</p>
+
+      <!-- Telefon ve E-posta -->
       <div class="contact-info">
         <div class="phone">
-          <strong data-key="phone">Telefon:</strong> +90 555 555 55 55
-          <br />
+          <p><strong data-key="phone">Telefon:</strong></p>
+          <p>+90 555 555 55 55</p>
           <a href="https://wa.me/905555555555" target="_blank">
             <img src="img/whatsapp.png" alt="WhatsApp" class="icon" />
           </a>
         </div>
         <div class="email">
-          <strong data-key="email">E-posta:</strong>
-          <div>
-            john@example.com<br />
-            john.doe@company.com
-          </div>
+          <p><strong data-key="email">E-posta:</strong></p>
+          <p>john@example.com<br/>john.doe@company.com</p>
         </div>
       </div>
 
+      <!-- Adresler -->
+      <p><strong data-key="address">Adres:</strong></p>
       <div class="addresses">
         <div class="address-block">
-          <p>İstanbul, Türkiye</p>
+          <span>İstanbul, Türkiye</span>
           <a href="https://www.google.com/maps?q=İstanbul" target="_blank">
             <img src="img/maps.png" alt="Map İstanbul" class="icon" />
           </a>
         </div>
         <div class="address-block">
-          <p>Ankara, Türkiye</p>
+          <span>Ankara, Türkiye</span>
           <a href="https://www.google.com/maps?q=Ankara" target="_blank">
             <img src="img/maps.png" alt="Map Ankara" class="icon" />
           </a>
         </div>
       </div>
 
-      <nav class="page-links">
-        <a href="page2.html" data-key="page2">2. Sayfaya Git</a>
-        <a href="page3.html" data-key="page3">3. Sayfaya Git</a>
-      </nav>
+      <!-- Sayfa Bağlantıları -->
+      <div class="page-links">
+        <a href="page2.html" data-key="page2">2. Sayfa</a>
+        <a href="page3.html" data-key="page3">3. Sayfa</a>
+      </div>
+
     </div>
   </div>
 </body>
