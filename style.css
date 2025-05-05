@@ -31,7 +31,7 @@ body {
   gap: 10px;
   margin-bottom: 20px;
   flex-wrap: wrap;
-  justify-content: right;
+  justify-content: center;
 }
 
 .language-selector img {
