@@ -1,10 +1,10 @@
-/* Genel Ayarlar */
+/* Genel */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
 
-/* Arka Plan */
+/* Arka plan */
 .overlay {
   background: url('img/airplane.jpg') no-repeat center center fixed;
   background-size: cover;
@@ -15,9 +15,9 @@ body {
   padding: 40px 20px;
 }
 
-/* İçerik Kutusu */
+/* İçerik kutusu */
 .content {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.85);
   padding: 30px;
   border-radius: 12px;
   max-width: 850px;
@@ -26,7 +26,15 @@ body {
   box-shadow: 0 0 12px rgba(0,0,0,0.2);
 }
 
-/* Profil Fotoğrafı */
+/* Başlık altı isim */
+.name {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+/* Profil foto */
 .profile-photo {
   width: 200px;
   border-radius: 10px;
@@ -55,12 +63,12 @@ body {
   gap: 5px;
 }
 
-.language-selector button img {
+.language-selector img {
   width: 20px;
   height: 14px;
 }
 
-/* İletişim Bilgileri */
+/* İletişim */
 .contact-info {
   display: flex;
   flex-wrap: wrap;
@@ -101,7 +109,7 @@ body {
   gap: 10px;
 }
 
-/* Sayfa Linkleri */
+/* Sayfa linkleri */
 .page-links {
   margin-top: 25px;
   display: flex;
@@ -124,7 +132,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* Mobil Duyarlılık */
+/* Mobil */
 @media (max-width: 600px) {
   .language-selector {
     flex-direction: row;
