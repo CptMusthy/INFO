@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-key="title">Kişisel Bilgiler</title>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
@@ -10,30 +10,23 @@
 <body>
   <div class="overlay">
     <div class="content">
-      
-      <!-- Dil Seçimi -->
+
+      <!-- Dil Seçici -->
       <div class="language-selector">
-        <button onclick="setLanguage('tr')">
-          <img src="img/tr.png" alt="TR"/> Türkçe
-        </button>
-        <button onclick="setLanguage('en')">
-          <img src="img/en.png" alt="EN"/> English
-        </button>
-        <button onclick="setLanguage('zh')">
-          <img src="img/zh.png" alt="ZH"/> 中文
-        </button>
-        <button onclick="setLanguage('ru')">
-          <img src="img/ru.png" alt="RU"/> Русский
-        </button>
+        <button onclick="setLanguage('tr')"><img src="img/tr.png" alt="TR" />Türkçe</button>
+        <button onclick="setLanguage('en')"><img src="img/en.png" alt="EN" />English</button>
+        <button onclick="setLanguage('zh')"><img src="img/zh.png" alt="ZH" />中文</button>
+        <button onclick="setLanguage('ru')"><img src="img/ru.png" alt="RU" />Русский</button>
       </div>
 
-      <!-- Fotoğraf -->
-      <img src="img/your-photo.jpg" alt="Profil Fotoğrafı" class="profile-photo" />
-
+      <!-- Başlık ve İsim -->
       <h1 data-key="title">Kişisel Bilgiler</h1>
-      <p><strong data-key="name">Ad Soyad:</strong> John Doe</p>
+      <p class="name">John Doe</p>
 
-      <!-- Telefon ve E-posta -->
+      <!-- Fotoğraf -->
+      <img src="img/your-photo.jpg" alt="Profile Photo" class="profile-photo" />
+
+      <!-- İletişim Bilgileri -->
       <div class="contact-info">
         <div class="phone">
           <p><strong data-key="phone">Telefon:</strong></p>
@@ -44,12 +37,12 @@
         </div>
         <div class="email">
           <p><strong data-key="email">E-posta:</strong></p>
-          <p>john@example.com<br/>john.doe@company.com</p>
+          <p>john@example.com</p>
+          <p>john.doe@company.com</p>
         </div>
       </div>
 
-      <!-- Adresler -->
-      <p><strong data-key="address">Adres:</strong></p>
+      <!-- Adres Bilgileri -->
       <div class="addresses">
         <div class="address-block">
           <span>İstanbul, Türkiye</span>
