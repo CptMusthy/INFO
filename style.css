@@ -1,8 +1,10 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  font-size: 16px;
   background: url('img/airplane.jpg') no-repeat center center fixed;
   background-size: cover;
+  color: white;
 }
 
 .overlay {
