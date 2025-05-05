@@ -13,6 +13,10 @@ function loadLanguage(lang) {
           el.textContent = data[key];
         }
       });
+      // Sayfa başlığını da güncelle
+      if (data.title) {
+        document.title = data.title;
+      }
     });
 }
 
