@@ -1,10 +1,10 @@
-/* Genel ayarlar */
+/* Genel Ayarlar */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
 
-/* Arka plan */
+/* Arka Plan */
 .overlay {
   background: url('img/airplane.jpg') no-repeat center center fixed;
   background-size: cover;
@@ -15,9 +15,9 @@ body {
   padding: 40px 20px;
 }
 
-/* İçerik kutusu */
+/* İçerik Kutusu */
 .content {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 30px;
   border-radius: 12px;
   max-width: 850px;
@@ -26,14 +26,14 @@ body {
   box-shadow: 0 0 12px rgba(0,0,0,0.2);
 }
 
-/* Profil fotoğrafı */
+/* Profil Fotoğrafı */
 .profile-photo {
   width: 200px;
   border-radius: 10px;
   margin-bottom: 20px;
 }
 
-/* Dil seçimi */
+/* Dil Seçici */
 .language-selector {
   display: flex;
   flex-wrap: wrap;
@@ -43,7 +43,7 @@ body {
 }
 
 .language-selector button {
-  padding: 8px 12px;
+  padding: 6px 10px;
   font-size: 14px;
   font-weight: bold;
   border: 1px solid #ccc;
@@ -60,12 +60,12 @@ body {
   height: 14px;
 }
 
-/* İletişim bilgileri */
+/* İletişim Bilgileri */
 .contact-info {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 50px;
   margin: 20px 0;
   text-align: left;
 }
@@ -75,35 +75,35 @@ body {
   min-width: 200px;
 }
 
-/* İkonlar */
+/* İkon */
 .icon {
   width: 24px;
   height: 24px;
-  margin-top: 5px;
+  margin-top: 6px;
 }
 
 /* Adresler */
 .addresses {
   display: flex;
-  justify-content: center;
-  gap: 50px;
-  margin: 20px 0;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px 0;
 }
 
 .address-block {
   display: flex;
   align-items: center;
-  gap: 10px;
   background-color: rgba(240, 240, 240, 0.9);
   padding: 10px 16px;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  gap: 10px;
 }
 
-/* Sayfa bağlantıları */
+/* Sayfa Linkleri */
 .page-links {
-  margin-top: 20px;
+  margin-top: 25px;
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -124,16 +124,17 @@ body {
   transform: translateY(-2px);
 }
 
-/* Mobil uyum */
+/* Mobil Duyarlılık */
 @media (max-width: 600px) {
   .language-selector {
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
   }
 
   .contact-info {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .addresses {
