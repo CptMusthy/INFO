@@ -1,10 +1,10 @@
-/* Genel sayfa ayarları */
+/* Genel ayarlar */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
 
-/* Arka plan ve ortalama */
+/* Arka plan */
 .overlay {
   background: url('img/airplane.jpg') no-repeat center center fixed;
   background-size: cover;
@@ -17,7 +17,7 @@ body {
 
 /* İçerik kutusu */
 .content {
-  background-color: rgba(255, 255, 255, 0.85); /* Saydam beyaz arka plan */
+  background-color: rgba(255, 255, 255, 0.85);
   padding: 30px;
   border-radius: 12px;
   max-width: 850px;
@@ -26,7 +26,14 @@ body {
   box-shadow: 0 0 12px rgba(0,0,0,0.2);
 }
 
-/* Dil seçim alanı */
+/* Profil fotoğrafı */
+.profile-photo {
+  width: 200px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Dil seçimi */
 .language-selector {
   display: flex;
   flex-wrap: wrap;
@@ -35,7 +42,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* Dil butonları */
 .language-selector button {
   padding: 8px 12px;
   font-size: 14px;
@@ -49,20 +55,12 @@ body {
   gap: 5px;
 }
 
-/* Bayrak resimleri boyutlandırma */
 .language-selector button img {
   width: 20px;
-  height: auto;
+  height: 14px;
 }
 
-/* WhatsApp, harita ikonları */
-.icon {
-  width: 24px;
-  height: 24px;
-  margin-top: 5px;
-}
-
-/* Telefon ve eposta yan yana */
+/* İletişim bilgileri */
 .contact-info {
   display: flex;
   flex-wrap: wrap;
@@ -77,7 +75,14 @@ body {
   min-width: 200px;
 }
 
-/* Adres blokları */
+/* İkonlar */
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-top: 5px;
+}
+
+/* Adresler */
 .addresses {
   display: flex;
   justify-content: center;
@@ -119,12 +124,11 @@ body {
   transform: translateY(-2px);
 }
 
-/* Mobil uyum için medya sorguları */
+/* Mobil uyum */
 @media (max-width: 600px) {
   .language-selector {
-    flex-direction: row;
     flex-wrap: wrap;
-    gap: 8px;
+    justify-content: center;
   }
 
   .contact-info {
