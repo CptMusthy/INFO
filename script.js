@@ -5,24 +5,21 @@ function setLanguage(lang) {
 
 function loadLanguage(lang) {
   fetch(`lang/${lang}.json`)
-    .then(res => res.json())
+    .then(res => {
+      if (!res.ok) throw new Error("Dil dosyası bulunamadı");
+      return res.json();
+    })
     .then(data => {
-      document.querySelectorAll("[data-key]").forEach(el => {
-        const key = el.getAttribute("data-key");
-        if (data[key]) {
-          el.textContent = data[key];
-        }
+      document.querySelectorAll('[data-key]').forEach(el => {
+        const key = el.getAttribute('data-key');
+        if (data[key]) el.textContent = data[key];
       });
-      // Sayfa başlığını da güncelle
-      if (data.title) {
-        document.title = data.title;
-      }
-    });
+      if (data.title) document.title = data.title;
+    })
+    .catch(err => console.error("Dil yükleme hatası:", err));
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const savedLang = localStorage.getItem('language');
-  const lang = savedLang || 'tr';
-  loadLanguage(lang);
+document.addEventListener('DOMContentLoaded', () => {
+  const savedLang = localStorage.getItem('language') || 'tr';
+  loadLanguage(savedLang);
 });
-
