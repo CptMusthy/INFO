@@ -23,89 +23,65 @@ body {
   justify-content: center;
 }
 
-.language-selector button {
-  background-color: white;
-  border: 1px solid #ccc;
-  padding: 5px 10px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  cursor: pointer;
-}
-
 .language-selector img {
-  width: 20px;
-  height: 14px;
-}
-
-.profile-photo {
-  width: 200px;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  width: 30px;
+  height: 20px;
 }
 
 .content {
   text-align: center;
   max-width: 600px;
+  width: 100%;
 }
 
-.info {
-  margin: 10px 0;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.icon {
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
-}
-
-.address-title {
+.name {
   font-size: 20px;
   font-weight: bold;
-  margin: 20px 0 10px;
+  margin-bottom: 10px;
+}
+
+.profile-img {
+  width: 180px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .addresses {
   display: flex;
-  justify-content: center;
-  gap: 30px;
+  justify-content: space-around;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
-.address-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 16px;
+.address {
+  text-align: center;
+  margin: 10px;
 }
 
-.page-links {
-  margin-top: 30px;
+.icon {
+  width: 32px;
+  height: 32px;
+  margin-top: 5px;
+  cursor: pointer;
 }
 
-.page-links a {
-  margin: 0 10px;
-  text-decoration: none;
-  background: #007BFF;
+.nav-button {
+  background-color: #007BFF;
   color: white;
-  padding: 8px 12px;
-  border-radius: 6px;
-  transition: background 0.3s;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin: 10px;
+  display: inline-block;
 }
 
-.page-links a:hover {
-  background: #0056b3;
-}
-
-@media (max-width: 600px) {
-  .language-selector {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .addresses {
-    flex-direction: column;
-    align-items: center;
-  }
+.nav-button:hover {
+  background-color: #0056b3;
 }
