@@ -21,12 +21,13 @@
 }
 
 
+/* Dil seçici */
 .language-selector {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
   gap: 10px;
   margin-bottom: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .language-selector img {
