@@ -25,3 +25,4 @@ document.addEventListener("DOMContentLoaded", () => {
   const lang = savedLang || 'tr';
   loadLanguage(lang);
 });
+
