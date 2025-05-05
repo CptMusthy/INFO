@@ -19,17 +19,13 @@ body {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
-}
-
-.language-selector button {
-  background: none;
-  border: none;
-  cursor: pointer;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .language-selector img {
-  width: 32px;
-  height: 24px;
+  width: 30px;
+  height: 20px;
 }
 
 .content {
