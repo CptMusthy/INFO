@@ -1,157 +1,91 @@
-/* Genel */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-}
-
-/* Arka plan */
-.overlay {
   background: url('img/airplane.jpg') no-repeat center center fixed;
   background-size: cover;
+}
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.85);
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px 20px;
+  padding: 20px;
 }
 
-/* İçerik kutusu */
-.content {
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 30px;
-  border-radius: 12px;
-  max-width: 850px;
-  width: 100%;
-  text-align: center;
-  box-shadow: 0 0 12px rgba(0,0,0,0.2);
-}
-
-/* Başlık altı isim */
-.name {
-  font-size: 22px;
-  font-weight: bold;
-  margin-top: -10px;
-  margin-bottom: 20px;
-}
-
-/* Profil foto */
-.profile-photo {
-  width: 200px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-/* Dil Seçici */
 .language-selector {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 10px;
   margin-bottom: 20px;
 }
 
 .language-selector button {
-  padding: 6px 10px;
-  font-size: 14px;
-  font-weight: bold;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #eee;
+  background: none;
+  border: none;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 5px;
 }
 
 .language-selector img {
-  width: 20px;
-  height: 14px;
-}
-
-/* İletişim */
-.contact-info {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px;
-  margin: 20px 0;
-  text-align: left;
-}
-
-.contact-info .phone,
-.contact-info .email {
-  min-width: 200px;
-}
-
-/* İkon */
-.icon {
-  width: 24px;
+  width: 32px;
   height: 24px;
-  margin-top: 6px;
 }
 
-/* Adresler */
+.content {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.profile-img {
+  width: 180px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
 .addresses {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
-.address-block {
-  display: flex;
-  align-items: center;
-  background-color: rgba(240, 240, 240, 0.9);
-  padding: 10px 16px;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  gap: 10px;
+.address {
+  text-align: center;
+  margin: 10px;
 }
 
-/* Sayfa linkleri */
-.page-links {
-  margin-top: 25px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+.icon {
+  width: 32px;
+  height: 32px;
+  margin-top: 5px;
+  cursor: pointer;
 }
 
-.page-links a {
+.nav-button {
+  background-color: #007BFF;
+  color: white;
   text-decoration: none;
-  color: #0044cc;
-  font-weight: bold;
-  background-color: #e0e0ff;
-  padding: 10px 18px;
+  padding: 10px 15px;
   border-radius: 8px;
-  transition: background-color 0.3s, transform 0.2s;
+  margin: 10px;
+  display: inline-block;
 }
 
-.page-links a:hover {
-  background-color: #c0c0ff;
-  transform: translateY(-2px);
-}
-
-/* Mobil */
-@media (max-width: 600px) {
-  .language-selector {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .contact-info {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .addresses {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .address-block {
-    flex-direction: column;
-    text-align: center;
-  }
+.nav-button:hover {
+  background-color: #0056b3;
 }
