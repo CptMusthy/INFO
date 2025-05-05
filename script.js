@@ -13,15 +13,11 @@ function loadLanguage(lang) {
           el.textContent = data[key];
         }
       });
-
-      // Sayfa başlığını da güncelle
-      if (data.title) {
-        document.title = data.title;
-      }
     });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const savedLang = localStorage.getItem('language') || 'tr';
-  loadLanguage(savedLang);
+  const savedLang = localStorage.getItem('language');
+  const lang = savedLang || 'tr';
+  loadLanguage(lang);
 });
