@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,61 +9,62 @@
 </head>
 <body>
   <div class="overlay">
+    <div class="language-selector">
+      <button onclick="setLanguage('tr')">
+        <img src="img/flags/tr.png" alt="Türkçe" />
+      </button>
+      <button onclick="setLanguage('en')">
+        <img src="img/flags/en.png" alt="English" />
+      </button>
+      <button onclick="setLanguage('ru')">
+        <img src="img/flags/ru.png" alt="Russian" />
+      </button>
+      <button onclick="setLanguage('zh')">
+        <img src="img/flags/zh.png" alt="Chinese" />
+      </button>
+    </div>
+
     <div class="content">
-
-      <!-- Dil Seçici -->
-      <div class="language-selector">
-        <button onclick="setLanguage('tr')"><img src="img/tr.png" alt="TR" />Türkçe</button>
-        <button onclick="setLanguage('en')"><img src="img/en.png" alt="EN" />English</button>
-        <button onclick="setLanguage('zh')"><img src="img/zh.png" alt="ZH" />中文</button>
-        <button onclick="setLanguage('ru')"><img src="img/ru.png" alt="RU" />Русский</button>
-      </div>
-
-      <!-- Başlık ve İsim -->
       <h1 data-key="title">Kişisel Bilgiler</h1>
       <p class="name">John Doe</p>
+      <img src="img/your-photo.jpg" alt="Profile Photo" class="profile-img" />
 
-      <!-- Fotoğraf -->
-      <img src="img/your-photo.jpg" alt="Profile Photo" class="profile-photo" />
-
-      <!-- İletişim Bilgileri -->
-      <div class="contact-info">
-        <div class="phone">
-          <p><strong data-key="phone">Telefon:</strong></p>
+      <div class="info-row">
+        <div>
+          <p><strong data-key="phone">Telefon</strong></p>
           <p>+90 555 555 55 55</p>
           <a href="https://wa.me/905555555555" target="_blank">
             <img src="img/whatsapp.png" alt="WhatsApp" class="icon" />
           </a>
         </div>
-        <div class="email">
-          <p><strong data-key="email">E-posta:</strong></p>
+        <div>
+          <p><strong data-key="email">E-posta</strong></p>
           <p>john@example.com</p>
           <p>john.doe@company.com</p>
         </div>
       </div>
 
-      <!-- Adres Bilgileri -->
       <div class="addresses">
-        <div class="address-block">
-          <span>İstanbul, Türkiye</span>
+        <div class="address">
+          <p><strong data-key="address">Adres</strong></p>
+          <p>İstanbul, Türkiye</p>
           <a href="https://www.google.com/maps?q=İstanbul" target="_blank">
-            <img src="img/maps.png" alt="Map İstanbul" class="icon" />
+            <img src="img/maps.png" alt="Map" class="icon" />
           </a>
         </div>
-        <div class="address-block">
-          <span>Ankara, Türkiye</span>
+        <div class="address">
+          <p><strong>&nbsp;</strong></p>
+          <p>Ankara, Türkiye</p>
           <a href="https://www.google.com/maps?q=Ankara" target="_blank">
-            <img src="img/maps.png" alt="Map Ankara" class="icon" />
+            <img src="img/maps.png" alt="Map" class="icon" />
           </a>
         </div>
       </div>
 
-      <!-- Sayfa Bağlantıları -->
-      <div class="page-links">
-        <a href="page2.html" data-key="page2">2. Sayfa</a>
-        <a href="page3.html" data-key="page3">3. Sayfa</a>
-      </div>
-
+      <nav>
+        <a href="page2.html" class="nav-button" data-key="page2">2. Sayfa</a>
+        <a href="page3.html" class="nav-button" data-key="page3">3. Sayfa</a>
+      </nav>
     </div>
   </div>
 </body>
