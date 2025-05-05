@@ -18,7 +18,7 @@ body {
 /* İçerik kutusu */
 .content {
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 5px 10px 15px 10px; /* Üst, sağ, alt, sol sırasıyla */ /* Üst: 10px, sağ-sol: 15px, alt: 5px */
+  padding: 5px 10px 15px 10px; /* Üst, sağ, alt, sol sırasıyla */ /* Üst: 10px, sağ-sol: 15px, alt: 5px *//* Üst-alt: 10px, sağ-sol: 20px *//* Her taraftan 20px boşluk */
   border-radius: 12px;
   max-width: 850px;
   width: 100%;
